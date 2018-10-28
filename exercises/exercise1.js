@@ -3,7 +3,23 @@ import UserService from '../services/user_service.js';
 function getAge(emailInput, ageInput, submitButton) {
   const userService = new UserService();
 
-  // TODO
+  submitButton.textContent = 'Finding age...'
+
+  userService
+    .findByEmail(emailInput.value)
+    .then(({ dateOfBirth }) => {
+      if (dateOfBirth) {
+        return calculateAge(dateOfBirth);
+      } else {
+        throw Error('Age not known');
+        // or Promise.reject(Error('Age not known'));
+      }
+    })
+    .catch(error => error.message)
+    .then(value => {
+      ageInput.value = value;
+      submitButton.textContent = 'Find age';
+    });
 }
 
 function calculateAge(dateOfBirth) {
