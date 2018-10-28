@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="./exercises/exercise2.js"></script>
+  <title>Exercise 2</title>
+</head>
+
+<body>
+  <h1>Exercise 2</h1>
+  <h2>Instructions</h2>
+  <ol>
+    <li>
+      Find the user with the given email address and list the email addresses of their followers.
+      You can use <b>leonard@example.com</b> or <b>penny@example.com</b> to test this.
+    </li>
+    <li>
+      Update your code to show the location of each follower next to their email address.
+    </li>
+    <li>
+      Update your code to disable the submit button while the followers and their locations are
+      being retrieved.
+    </li>
+    <li>
+      <b>howard@example.com</b> has a follower that cannot be found. Catch the error and show
+      'location unavailable' next to that follower's email address instead.
+    </li>
+  </ol>
+  <h2>Fixture</h2>
+  <form id="ex2">
+    <p>
+      <label for="ex2-email">Email</label>
+      <input id="ex2-email">
+      <button id="ex2-submit">Find followers</button>
+    </p>
+    <p>
+      <label for="ex2-followers">Followers</label><br>
+      <textarea id="ex2-followers" cols="100" rows=5 readonly></textarea>
+    </p>
+  </form>
+</body>
+
+</html>
