@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="./exercises/exercise1.js"></script>
+  <title>Exercise 1</title>
+</head>
+
+<body>
+  <h1>Exercise 1</h1>
+  <h2>Instructions</h2>
+  <ol>
+    <li>
+      Find the user with the given email address and display their age in the age box.
+      You can use <b>bernadette@example.com</b> or <b>rajesh@example.com</b> to test this.
+    </li>
+    <li>
+      What happens when you try to find the age of <b>leslie@example.com</b>? Update your code to
+      show a useful message in the age box instead.
+    </li>
+    <li>
+      What happens when you try to find the age of <b>howard@example.com</b> or
+      <b>sheldon@example.com</b>? Update your code to show a useful message in the age box instead.
+    </li>
+    <li>
+      Update your code to change the submit button text to 'Finding age...' while waiting for
+      the age to be displayed.
+    </li>
+  </ol>
+  <h2>Fixture</h2>
+  <form id="ex1">
+    <p>
+      <label for="ex1-email">Email</label>
+      <input id="ex1-email">
+      <button id="ex1-submit">Find age</button>
+    </p>
+    <p>
+      <label for="ex1-age">Age</label>
+      <input id="ex1-age" readonly>
+    </p>
+  </form>
+</body>
+
+</html>
